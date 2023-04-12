@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "vitrocore";
+    src: url(../font/VITRO\ CORE\ TTF.ttf);
+}
+
+@font-face {
+    font-family: "vitroinspire";
+    src: url(../font/VITRO\ INSPIRE\ TTF.ttf);
+}
+@font-face {
+    font-family: "vitropride";
+    src: url(../font/VITRO\ PRIDE\ TTF.ttf);
+}
+
+body{
+    background-color: #0D05F2;
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    margin: 0 auto;
+    width: 360px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+h1{
+    color: rgb(255, 255, 153);
+    font-family: "vitrocore";
+    font-size: 2.5rem;
+    text-shadow: 1.5px 1.5px 0 rgb(0, 255, 191);
+}
+
+h1::before{
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 20px;
+    background-color: rgb(255, 255, 153);
+    margin-right: 20px;
+}
+h1::after{
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 20px;
+    background-color: rgb(255, 255, 153);
+    margin-left: 20px;
+}
+
+hr{
+    width: 50px;
+    height: 2px;
+    background-color: rgb(255, 255, 153);
+    margin: 0 auto;
+}
+
+#textfield{
+    height: 40px;
+}
+
+.btn{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+    color: #2E27F2;
+    text-align: center;
+    margin: 10px;
+    font-weight: bolder;
+    display: inline-block;
+    line-height: 60px;
+    cursor: pointer;
+    box-shadow: 10px 15px 20px 1px rgba(0,0,0,0.2);
+    font-family: "vitrocore";
+    font-size: 1.2rem;
+    transition: all 0.1s ease;
+}
+
+.btn:hover{
+    background-color: rgb(255, 255, 153);
+    width: 62px;
+    height: 62px;
+    line-height: 62px;
+    transform: translateY(-5px);
+}
+
+#reload{
+    width: 250px;
+    height: 80px;
+    line-height: 80px;
+    background-color: #0D05F2;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    font-family: "vitrocore";
+    border: dashed 2px white;
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    box-shadow: 10px 15px 20px 1px rgba(0,0,0,0.2);
+    display: none;
+    transition: all 0.1s ease;
+}
+
+#reload:hover{
+    width: 255px;
+    height: 85px;
+    line-height: 85px;
+    transform: translateY(-5px);
+}
+
+#box{
+    position: relative;
+    height: 200px;
+    margin: 25px 0 25px 0;
+    padding: 20px 0 20px 0;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 4px rgb(0, 255, 191);
+}
+
+.box01 img{
+    transform: rotate(180deg);
+}
+
+img{
+    width: 100px;
+    display: none;
+}
+
+#imgVs{
+    width: 40px;
+    position: absolute;
+    top: 102px;
+    left: 160px;
+    transform: rotate(30deg);
+}
+
+span{
+    display: block;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#footer{
+    background-color: white;
+    width: 100%;
+    color: #858796;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    padding: 5px 0;
+}

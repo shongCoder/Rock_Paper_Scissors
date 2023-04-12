@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가위바위보 게임하기</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>가위, 바위, 보 !</h1>
+        <!-- <hr> -->
+        <div id="box">
+            <div class="box01">
+                <img src="img/gawi.png" alt="가위 이미지" id="comGawi">
+                <img src="img/bawi.png" alt="바위 이미지" id="comBawi">
+                <img src="img/bo.png" alt="보 이미지" id="comBo">
+            </div>
+            <div class="vs">
+                <img src="img/vs.png" alt="vs" id="imgVs">
+            </div>
+            <div class="box02">
+                <img src="img/gawi.png" alt="가위 이미지" id="userGawi">
+                <img src="img/bawi.png" alt="바위 이미지" id="userBawi">
+                <img src="img/bo.png" alt="보 이미지" id="userBo">
+            </div>
+        </div>
+        <div id="textfield">
+            <span id="result"></span>
+        </div>
+        
+        <div id="btn_game">
+            <div class="btn" onclick='gameGawi()'>가위</div>
+            <div class="btn" onclick='gameBawi()'>바위</div>
+            <div class="btn" onclick='gameBo()'>보</div>
+        </div>
+        <div id="reload" onclick='reload()'>다시하기</div>
+    </div>
+    
+    <div id="footer">
+        <p>COPYRIGHT Ⓒ SHONG</p>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
