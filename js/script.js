@@ -1,13 +1,17 @@
+var SCISSORS = '가위';
+var ROCK = '바위';
+var PAPER = '보';
+
 var comImput;
 
 var rnd = Math.random();
 
 if(rnd < 0.33){
-    comImput = '가위';
+    comImput = SCISSORS;
 }else if(rnd < 0.66){
-    comImput = '바위';
+    comImput = ROCK;
 }else{
-    comImput = '보';
+    comImput = PAPER;
 }
 
 console.log(comImput);
@@ -52,10 +56,10 @@ function reload(){
 }
 
 function gameGawi(){
-    if(comImput === '가위'){
+    if(comImput === SCISSORS){
         textField.appendChild(textFire);
         comGa();
-    }else if(comImput === '바위'){
+    }else if(comImput === ROCK){
         textField.appendChild(textLose);
         comBa();
     }else{
@@ -69,10 +73,10 @@ function gameGawi(){
 
 
 function gameBawi(){
-    if(comImput === '가위'){
+    if(comImput === SCISSORS){
         textField.appendChild(textWin);
         comGa();
-    }else if(comImput === '바위'){
+    }else if(comImput === ROCK){
         textField.appendChild(textFire);
         comBa();
     }else{
@@ -85,10 +89,10 @@ function gameBawi(){
 }
 
 function gameBo(){
-    if(comImput === '가위'){
+    if(comImput === SCISSORS){
         textField.appendChild(textLose);
         comGa();
-    }else if(comImput === '바위'){
+    }else if(comImput === ROCK){
         textField.appendChild(textWin);
         comBa();
     }else{
